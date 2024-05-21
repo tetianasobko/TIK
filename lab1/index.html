@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamming Code (11,7) Encoder/Decoder</title>
+</head>
+<body>
+    <h1>Кодування та декодування (11,7)-коду Хемінга</h1>
+    
+    <div>
+        <h2>Кодування</h2>
+        <input type="text" id="inputText" placeholder="Введіть текст для кодування">
+        <button onclick="encodeText()">Закодувати</button>
+        <p>Кодований текст: <span id="encodedText"></span></p>
+    </div>
+    
+    <div>
+        <h2>Декодування</h2>
+        <input type="text" id="encodedInput" placeholder="Введіть кодований текст для декодування">
+        <button onclick="decodeText()">Розкодувати</button>
+        <p>Розкодований текст: <span id="decodedText"></span></p>
+        <p id="errorInfo"></p>
+    </div>
+    
+    <script src="hamming.js"></script>
+</body>
+</html>
